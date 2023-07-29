@@ -1,0 +1,146 @@
+port/arm7/gcc/os_target.cpp:61:13: style: struct member 'TDebugSupportInfo::PROCESS_COUNT' is never used. [unusedStructMember]
+    uint8_t PROCESS_COUNT;
+            ^
+port/arm7/gcc/os_target.cpp:62:13: style: struct member 'TDebugSupportInfo::TIMEOUT_SIZE' is never used. [unusedStructMember]
+    uint8_t TIMEOUT_SIZE;
+            ^
+port/arm7/gcc/os_target.cpp:63:13: style: struct member 'TDebugSupportInfo::NAME_OFFSET' is never used. [unusedStructMember]
+    uint8_t NAME_OFFSET;
+            ^
+port/blackfin/cces/bf6xx/os_target.cpp:64:45: style: Variable 'STACK_FRAME_SIZE' is assigned a value that is never used. [unreadVariable]
+    const uint_fast8_t STACK_FRAME_SIZE     = CONTEXT_SIZE + FUN_INCOMING_ARGS_SIZE + 2;
+                                            ^
+port/blackfin/gcc/os_target.cpp:61:45: style: Variable 'STACK_FRAME_SIZE' is assigned a value that is never used. [unreadVariable]
+    const uint_fast8_t STACK_FRAME_SIZE     = CONTEXT_SIZE + FUN_INCOMING_ARGS_SIZE + 2;
+                                            ^
+port/blackfin/vdsp/os_target.cpp:61:45: style: Variable 'STACK_FRAME_SIZE' is assigned a value that is never used. [unreadVariable]
+    const uint_fast8_t STACK_FRAME_SIZE     = CONTEXT_SIZE + FUN_INCOMING_ARGS_SIZE + 2;
+                                            ^
+port/cortex/mx-gcc/os_target.cpp:119:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED22UL , uint8_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED22UL , uint8_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:121:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED22UL , uint8_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-gcc/os_target.cpp:119:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED23UL , uint8_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED23UL , uint8_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:121:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED23UL , uint8_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-gcc/os_target.cpp:119:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:121:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-gcc/os_target.cpp:127:40: style: C-style pointer casting [cstyleCast]
+    volatile T* operator->() { return (volatile T*)addr; }
+                                       ^
+port/cortex/mx-gcc/os_target.cpp:198:0: information: Skipping configuration 'CORE_PRIORITY_BITS' since the value of 'CORE_PRIORITY_BITS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+enum { SYS_TIMER_PRIORITY = ((0xFEUL << (8-(CORE_PRIORITY_BITS))) & 0xFF) };
+^
+port/cortex/mx-gcc/os_target.cpp:119:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-gcc/os_target.cpp:121:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-gcc/os_target.cpp:205:29: error: Signed integer overflow for expression '0xFF<<24'. [integerOverflow]
+    SHPR3 = (SHPR3 & ~(0xFF << 24)) | (SYS_TIMER_PRIORITY << 24);
+                            ^
+port/cortex/mx-gcc/os_target.cpp:58:13: style: struct member 'TDebugSupportInfo::PROCESS_COUNT' is never used. [unusedStructMember]
+    uint8_t PROCESS_COUNT;
+            ^
+port/cortex/mx-gcc/os_target.cpp:59:13: style: struct member 'TDebugSupportInfo::TIMEOUT_SIZE' is never used. [unusedStructMember]
+    uint8_t TIMEOUT_SIZE;
+            ^
+port/cortex/mx-gcc/os_target.cpp:60:13: style: struct member 'TDebugSupportInfo::NAME_OFFSET' is never used. [unusedStructMember]
+    uint8_t NAME_OFFSET;
+            ^
+port/cortex/mx-iar/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-iar/os_target.cpp:121:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-iar/os_target.cpp:122:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000ED20UL , uint32_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-iar/os_target.cpp:128:40: style: C-style pointer casting [cstyleCast]
+    volatile T* operator->() { return (volatile T*)addr; }
+                                       ^
+port/cortex/mx-iar/os_target.cpp:239:29: error: Signed integer overflow for expression '0xFF<<24'. [integerOverflow]
+    SHPR3 = (SHPR3 & ~(0xFF << 24)) | (SYS_TIMER_PRIORITY << 24);
+                            ^
+port/cortex/mx-iar/os_target.cpp:237:0: information: Skipping configuration 'CORE_PRIORITY_BITS' since the value of 'CORE_PRIORITY_BITS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    static const uint32_t SYS_TIMER_PRIORITY = ((0xFEUL << (8-(CORE_PRIORITY_BITS))) & 0xFF);
+^
+port/cortex/mx-iar/os_target.cpp:120:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operator|=' can be const. [functionConst]
+    void operator|=(type value) { *(volatile type*)addr |= value; }
+         ^
+port/cortex/mx-iar/os_target.cpp:121:10: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operator&=' can be const. [functionConst]
+    void operator&=(type value) { *(volatile type*)addr &= value; }
+         ^
+port/cortex/mx-iar/os_target.cpp:122:5: style:inconclusive: Technically the member function 'ioregister_t < 0xE000EF34UL , uint32_t >::operatortype' can be const. [functionConst]
+    operator type() { return *(volatile type*)addr; }
+    ^
+port/cortex/mx-iar/os_target.cpp:59:13: style: struct member 'TDebugSupportInfo::PROCESS_COUNT' is never used. [unusedStructMember]
+    uint8_t PROCESS_COUNT;
+            ^
+port/cortex/mx-iar/os_target.cpp:60:13: style: struct member 'TDebugSupportInfo::TIMEOUT_SIZE' is never used. [unusedStructMember]
+    uint8_t TIMEOUT_SIZE;
+            ^
+port/cortex/mx-iar/os_target.cpp:61:13: style: struct member 'TDebugSupportInfo::NAME_OFFSET' is never used. [unusedStructMember]
+    uint8_t NAME_OFFSET;
+            ^
+port/stm8/iar/os_target.cpp:143:0: information: Skipping configuration 'SYSTEM_TIMER_FLAG_CLEAR' since the value of 'SYSTEM_TIMER_FLAG_CLEAR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SYSTEM_TIMER_FLAG_CLEAR();
+^
+port/stm8/iar/os_target.cpp:143:0: information: Skipping configuration 'scmRTOS_DEBUG_ENABLE=1;SYSTEM_TIMER_FLAG_CLEAR' since the value of 'SYSTEM_TIMER_FLAG_CLEAR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SYSTEM_TIMER_FLAG_CLEAR();
+^
+port/cortex/mx-gcc/os_target.cpp:218:0: style: The function 'LOCK_SYSTEM_TIMER' is never used. [unusedFunction]
+
+^
+port/avr/iar/os_target.cpp:120:0: style: The function 'OS_SystemTimer_ISR' is never used. [unusedFunction]
+
+^
+port/cortex/mx-gcc/os_target.cpp:180:0: style: The function 'SysTick_Handler' is never used. [unusedFunction]
+
+^
+port/cortex/mx-gcc/os_target.cpp:219:0: style: The function 'UNLOCK_SYSTEM_TIMER' is never used. [unusedFunction]
+
+^
+port/cortex/mx-gcc/os_target.cpp:202:0: style: The function '__init_system_timer' is never used. [unusedFunction]
+
+^
+ext/recursive-mutex/recursive_mutex.cpp:90:0: style: The function 'force_unlock' is never used. [unusedFunction]
+
+^
+core/usrlib.cpp:80:0: style: The function 'get_byte' is never used. [unusedFunction]
+
+^
+port/cortex/mx-gcc/os_target.cpp:233:0: style: The function 'os_start' is never used. [unusedFunction]
+
+^
+ext/recursive-mutex/recursive_mutex.cpp:104:0: style: The function 'try_lock' is never used. [unusedFunction]
+
+^
+ext/recursive-mutex/recursive_mutex.cpp:74:0: style: The function 'unlock' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
